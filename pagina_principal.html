@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>
+            MiniSuper "La Iguana"
+        </title>
+        <link rel="stylesheet" type="text/css" href="tienda.css">
+        <link rel="shortcut icon" href="laiguana.ico">
+
+    </head>
+    <body>
+        <div class="header">
+            <a href="pagina_principal.html" class="logo"><img class="logo" src="laiguana.png"></a>
+            <div class="header-right">
+                <ul class="ul">
+                    <li class="li"><a class="li" href="Inicio_sesion.html" target="Contenido">Admin</a></li>
+                </ul>
+            </div>
+          </div>
+          
+          <div id="uno">
+            <p id="hi">La Iguana</p>
+            <p id="pi">Tu aliado para el hogar</p>
+          </div>
+
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="img1.png" style="width:100%">
+              <div class="text">La Iguana tu tienda de preferencia</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="img2.jpg" style="width:100%">
+              <div class="text">Todo en un mismo lugar</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="img3.jpg" style="width:100%">
+              <div class="text">La Iguana siempre a tu servicio</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script type="text/javascript">
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+            <div id="dos">
+              <p id="hi">Nosotros:</p>
+              <p id="cosas">Nuestra historia:</p>
+            </div>
+ 
+
+            <div id="historia">
+              <p id="his">
+                Carnicería y Abarrotes "La Iguana" fue fundada en el año 2003 por Julio César Cázares Guerrero, un experimentado hombre en el área comercial gracias a que trabajó en Soriana y posteriormente en City Club, y fue ahí donde adquirió toda la experiencia que se necesita para formar un negocio comercial, tambien fue fundada por su cuñado Osvaldo Javier Aguilar De la Fuente. La tienda fue abierta al publico el 1 de febrero del 2004 y, désde ese momento, todos los días del año hasta el día de hoy sus puertas estan abiertas para satisfacer las necesidades de sus clientes.
+              </p>
+            </div>
+              
+            <div id="img1">
+              <img id="img4" src="img4.jpg">
+            </div>
+
+            
+            <div id="historia">
+              <p id="his">
+                Tiempo después Osvaldo decidio abandonar el negocio y Julio se convirtio en el único dueño de "La Iguana". La tienda lleva este particular nombre pues el terreno donde se construyó estaba lleno de estos animales, tambien habia camaleones, viboras, escorpiones, y muchos más animales, pero la ganadora fue la iguana.
+              </p>
+            </div>
+            <div id="historia">
+              <p id="his">
+               "La Iguana" se enfocó desde sus inicios en dar a sus clientes los mejores productos, la mejor calidad y los mejores precios. El modelo de negocio esta dirigido a la venta al menudeo, como una tienda de auto-servicio convencional donde podra encontrar los abarrotes que se necesitan día tras día en su hogar, carnes frias y rojas, productos de limpieza y recientemente "La Iguana" empezó a producir comidas caceras a precios axcecibles para ampliar su mercado.
+              </p>
+            </div>
+
+            <p id="cosas">Algunos productos:</p>
+              <div id="tienda">
+                <img id="imagen" src="img5.jpg">
+                <img id="imagen" src="img6.jpg">
+                <img id="imagen" src="img7.jpg">
+                <img id="imagen" src="img8.jpg">
+                <img id="imagen" src="img9.jpg">
+              </div>
+              
+              <p id="cosas">Metodos de pago:</p>
+            <div id="historia">
+              <p id="his">
+                Dentro de "La Iguana" podrá pagar sus compras con efectivo, tarjeta de credito y debito y además con vales de despensa. "La Iguana" tambien cuenta con recargas de telefonía móvil, y podra pagar sus recibos de agua, luz, gas e internet.
+              </p>
+            </div>
+
+            <div id="tienda">
+              <img id="image" src="efectivo.jpg">
+              <img id="image" src="tarjetas.png">
+              <img id="image" src="vales.png">
+            </div>
+
+            <div id="map">
+            <p id="cosas">Ubicación:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1700461756253!6m8!1m7!1sjY_A6iMVYq5yQ784gaybGA!2m2!1d25.65638958207117!2d-100.1221280662346!3f350.52343538821657!4f3.203381128896737!5f0.7820865974627469" width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <footer>
+              <p>Siguenos en Facebook:   <a href="https://www.facebook.com/profile.php?id=100052440592898&mibextid=gjUFcU" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=32 height=32/></a></p>
+              <p>Telefono: <a href="tel:+8121346295">81-2134-6295</a></p>
+              <p>Direccion: Hda. San Miguel 545, Hacienda Santa Lucía 1er. Sector, 67250 Cdad. Benito Juárez, N.L.</p>
+              <p>&COPY; La Iguana. Todos los derechos reservados.</p>
+            </footer>
+    </body>
+</html>
